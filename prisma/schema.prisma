@@ -1,0 +1,14 @@
+model User {
+  id    Int     @id @default(autoincrement())
+  email String  @unique
+  name  String
+  documents Document[]
+}
+
+model Document {
+  id     Int    @id @default(autoincrement())
+  name   String
+  status String 
+  userId Int    @unique
+  user   User   @relation(fields: [userId], references: [id])
+}
