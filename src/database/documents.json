@@ -1,21 +1,20 @@
 [
-    {
-      "id": 1,
-      "name": "Documento 1",
-      "status": "ativo",
-      "userId": 1
-    },
-    {
-      "id": 2,
-      "name": "Documento 2",
-      "status": "inativo",
-      "userId": 1
-    },
-    {
-      "id": 3,
-      "name": "Documento 3",
-      "status": "ativo",
-      "userId": 2
-    }
-  ]
-  
+  {
+    "id": 1,
+    "name": "Documento 1",
+    "status": "ativo",
+    "userId": 1
+  },
+  {
+    "id": 2,
+    "name": "Documento 2",
+    "status": "inativo",
+    "userId": 1
+  },
+  {
+    "id": 3,
+    "name": "Documento 3",
+    "status": "ativo",
+    "userId": 2
+  }
+]
