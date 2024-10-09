@@ -1,9 +1,8 @@
-import { Router } from 'express';
-import DocumentController from '../controllers/documentController';
+import { Router } from "express";
+import DocumentController from "../controllers/documentController";
 
 const documentRouter = Router();
 const documentController = new DocumentController();
-
 
 /**
  * @swagger
@@ -44,7 +43,10 @@ const documentController = new DocumentController();
  *               message: "Usuário não encontrado."
  */
 
-documentRouter.get('/docs/:userId', documentController.getAllDocuments.bind(documentController));
+documentRouter.get(
+	"/docs/:userId",
+	documentController.getAllDocuments.bind(documentController),
+);
 
 /**
  * @swagger
@@ -91,7 +93,10 @@ documentRouter.get('/docs/:userId', documentController.getAllDocuments.bind(docu
  *                   message: "Usuário não encontrado."
  */
 
-documentRouter.get('/docs/:userId/:docId', documentController.getDocumentById.bind(documentController));
+documentRouter.get(
+	"/docs/:userId/:docId",
+	documentController.getDocumentById.bind(documentController),
+);
 
 /**
  * @swagger
@@ -139,7 +144,10 @@ documentRouter.get('/docs/:userId/:docId', documentController.getDocumentById.bi
  *               message: "Usuário não encontrado"
  */
 
-documentRouter.post('/docs/:userId', documentController.createDocument.bind(documentController));
+documentRouter.post(
+	"/docs/:userId",
+	documentController.createDocument.bind(documentController),
+);
 
 /**
  * @swagger
@@ -199,7 +207,10 @@ documentRouter.post('/docs/:userId', documentController.createDocument.bind(docu
  *                   message: "Usuário não encontrado."
  */
 
-documentRouter.put('/docs/:userId/:docId', documentController.updateDocument.bind(documentController));
+documentRouter.put(
+	"/docs/:userId/:docId",
+	documentController.updateDocument.bind(documentController),
+);
 
 /**
  * @swagger
@@ -239,6 +250,9 @@ documentRouter.put('/docs/:userId/:docId', documentController.updateDocument.bin
  *                   message: "Usuário não encontrado."
  */
 
-documentRouter.delete('/docs/:userId/:docId', documentController.deleteDocument.bind(documentController));
+documentRouter.delete(
+	"/docs/:userId/:docId",
+	documentController.deleteDocument.bind(documentController),
+);
 
 export default documentRouter;

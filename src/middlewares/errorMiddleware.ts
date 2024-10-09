@@ -1,23 +1,23 @@
-import type { NextFunction, Request, Response } from 'express';
-import ApiErrors from '../utils/apiErros';
+import type { NextFunction, Request, Response } from "express";
+import ApiErrors from "../utils/apiErros";
 
 const errorHandler = (
-  error: ApiErrors | Error,
-  _req: Request,
-  res: Response,
-  _next: NextFunction,
+	error: ApiErrors | Error,
+	_req: Request,
+	res: Response,
+	_next: NextFunction,
 ) => {
-  const statusCode = error instanceof ApiErrors ? error.statusCode : 500;
-  const message =
-    error instanceof ApiErrors ? error.message : 'Internal Server Error';
+	const statusCode = error instanceof ApiErrors ? error.statusCode : 500;
+	const message =
+		error instanceof ApiErrors ? error.message : "Internal Server Error";
 
-  console.error('Erro:', {
-    message: error.message,
-    statusCode,
-    stack: error.stack,
-  });
+	console.error("Erro:", {
+		message: error.message,
+		statusCode,
+		stack: error.stack,
+	});
 
-  return res.status(statusCode).json({ message });
+	return res.status(statusCode).json({ message });
 };
 
 export default errorHandler;

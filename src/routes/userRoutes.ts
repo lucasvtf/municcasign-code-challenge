@@ -1,5 +1,5 @@
-import { Router } from 'express';
-import UserController from '../controllers/userController';
+import { Router } from "express";
+import UserController from "../controllers/userController";
 
 const userRouter = Router();
 const userController = new UserController();
@@ -33,7 +33,7 @@ const userController = new UserController();
  *                     example: "lucas@example.com"
  */
 
-userRouter.get('/users', userController.getAllUsers.bind(userController));
+userRouter.get("/users", userController.getAllUsers.bind(userController));
 
 /**
  * @swagger
@@ -80,7 +80,10 @@ userRouter.get('/users', userController.getAllUsers.bind(userController));
  *                   example: "Usuáro não encontrado"
  */
 
-userRouter.get('/users/:userId', userController.getUserById.bind(userController));
+userRouter.get(
+	"/users/:userId",
+	userController.getUserById.bind(userController),
+);
 
 /**
  * @swagger
@@ -133,7 +136,7 @@ userRouter.get('/users/:userId', userController.getUserById.bind(userController)
  *                   example: "Email já registrado."
  */
 
-userRouter.post('/users', userController.createUser.bind(userController));
+userRouter.post("/users", userController.createUser.bind(userController));
 
 /**
  * @swagger
@@ -194,7 +197,10 @@ userRouter.post('/users', userController.createUser.bind(userController));
  *                   example: "Usuáro não encontrado"
  */
 
-userRouter.put('/users/:userId', userController.updateUser.bind(userController));
+userRouter.put(
+	"/users/:userId",
+	userController.updateUser.bind(userController),
+);
 
 /**
  * @swagger
@@ -227,9 +233,9 @@ userRouter.put('/users/:userId', userController.updateUser.bind(userController))
  *                   example: "Usuáro não encontrado"
  */
 
-userRouter.delete('/users/:userId', userController.deleteUser.bind(userController));
+userRouter.delete(
+	"/users/:userId",
+	userController.deleteUser.bind(userController),
+);
 
 export default userRouter;
-
-
-

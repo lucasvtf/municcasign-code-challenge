@@ -1,0 +1,394 @@
+{
+	"_type": "export",
+	"__export_format": 4,
+	"__export_date": "2024-10-09T14:59:44.993Z",
+	"__export_source": "insomnia.desktop.app:v2022.6.0",
+	"resources": [
+		{
+			"_id": "req_de94f54519b44cb5b73c90df2081262d",
+			"parentId": "fld_185ea5d34d2542909c5ed502c0b07ae5",
+			"modified": 1728485928364,
+			"created": 1721149564575,
+			"url": "http://localhost:3001/users",
+			"name": "Create a new user.",
+			"description": "",
+			"method": "POST",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"name\": \"Teste Teste\",\n\t\"email\": \"teste@teste.com.br\"\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_926e41d3bace472e9a47be6d0dad1f5e"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1718274300461.25,
+			"isPrivate": false,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingFollowRedirects": "global",
+			"_type": "request"
+		},
+		{
+			"_id": "fld_185ea5d34d2542909c5ed502c0b07ae5",
+			"parentId": "wrk_102b02fc06144bdda8ee1a0f506f0504",
+			"modified": 1728485333714,
+			"created": 1721143700227,
+			"name": "Users Routes",
+			"description": "",
+			"environment": {},
+			"environmentPropertyOrder": null,
+			"metaSortKey": -1721143700227,
+			"_type": "request_group"
+		},
+		{
+			"_id": "wrk_102b02fc06144bdda8ee1a0f506f0504",
+			"parentId": null,
+			"modified": 1670446903152,
+			"created": 1670446903152,
+			"name": "New Document",
+			"description": "",
+			"scope": "design",
+			"_type": "workspace"
+		},
+		{
+			"_id": "req_d9beff32e22c440eab5a583ce9f7334b",
+			"parentId": "fld_185ea5d34d2542909c5ed502c0b07ae5",
+			"modified": 1728485932289,
+			"created": 1721143773315,
+			"url": "http://localhost:3001/users/3",
+			"name": "Update a user",
+			"description": "",
+			"method": "PUT",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"name\": \"Teste Teste Teste\",\n\t\"email\": \"teste@teste.com.br\"\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_926e41d3bace472e9a47be6d0dad1f5e"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1715405902668.5,
+			"isPrivate": false,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingFollowRedirects": "global",
+			"_type": "request"
+		},
+		{
+			"_id": "req_9b64191b59dd48a6ae12e55a71b0cc7e",
+			"parentId": "fld_185ea5d34d2542909c5ed502c0b07ae5",
+			"modified": 1728485933972,
+			"created": 1721144226242,
+			"url": "http://localhost:3001/users/3",
+			"name": "Delete a user.",
+			"description": "",
+			"method": "DELETE",
+			"body": { "mimeType": "application/json", "text": "" },
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_926e41d3bace472e9a47be6d0dad1f5e"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1712537504875.75,
+			"isPrivate": false,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingFollowRedirects": "global",
+			"_type": "request"
+		},
+		{
+			"_id": "req_72fd54dc48f742f4a9ff9915ebd2c9b4",
+			"parentId": "fld_185ea5d34d2542909c5ed502c0b07ae5",
+			"modified": 1728485935526,
+			"created": 1721144591699,
+			"url": "http://localhost:3001/users",
+			"name": "Find all registered users.",
+			"description": "",
+			"method": "GET",
+			"body": { "mimeType": "application/json", "text": "" },
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_43ec4e17b98a43da85fb695556119d2e"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1711103305979.375,
+			"isPrivate": false,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingFollowRedirects": "global",
+			"_type": "request"
+		},
+		{
+			"_id": "req_84f4b2d096d74964a87a3c6992768bd3",
+			"parentId": "fld_185ea5d34d2542909c5ed502c0b07ae5",
+			"modified": 1728485530805,
+			"created": 1728485528881,
+			"url": "http://localhost:3001/users/1",
+			"name": "Find a user by id.",
+			"description": "",
+			"method": "GET",
+			"body": { "mimeType": "application/json", "text": "" },
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_43ec4e17b98a43da85fb695556119d2e"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1710386206531.1875,
+			"isPrivate": false,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingFollowRedirects": "global",
+			"_type": "request"
+		},
+		{
+			"_id": "req_ad960cf360dd4384a344b599eb13d573",
+			"parentId": "fld_1cf53fb5644f475f8c492e49d098973e",
+			"modified": 1728485939087,
+			"created": 1721245619626,
+			"url": "http://localhost:3001/docs/1",
+			"name": "Find all docs from a user",
+			"description": "",
+			"method": "GET",
+			"body": { "mimeType": "application/json", "text": "" },
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_a562f00f18a94fe0883cfc9b80f2c23f"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1721245619626,
+			"isPrivate": false,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingFollowRedirects": "global",
+			"_type": "request"
+		},
+		{
+			"_id": "fld_1cf53fb5644f475f8c492e49d098973e",
+			"parentId": "wrk_102b02fc06144bdda8ee1a0f506f0504",
+			"modified": 1728485547865,
+			"created": 1721143707742,
+			"name": "Documents Routes",
+			"description": "",
+			"environment": {},
+			"environmentPropertyOrder": null,
+			"metaSortKey": -1715406403580,
+			"_type": "request_group"
+		},
+		{
+			"_id": "req_6086af7a09f94034b011c93e3c1b1305",
+			"parentId": "fld_1cf53fb5644f475f8c492e49d098973e",
+			"modified": 1728485754311,
+			"created": 1720727284101,
+			"url": "http://localhost:3001/docs/1",
+			"name": "Creates a new doc.",
+			"description": "",
+			"method": "POST",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n  \"name\": \"Documento 4\",\n  \"status\": \"ativo\"\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_2e2e9ed2985c410d8dc7f2c61476d2e4"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1709669107083,
+			"isPrivate": false,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingFollowRedirects": "global",
+			"_type": "request"
+		},
+		{
+			"_id": "req_60646b111fa54391896308d894405d54",
+			"parentId": "fld_1cf53fb5644f475f8c492e49d098973e",
+			"modified": 1728485942331,
+			"created": 1721143757961,
+			"url": "http://localhost:3001/docs/1/4",
+			"name": "Delete a doc.",
+			"description": "",
+			"method": "DELETE",
+			"body": { "mimeType": "application/json", "text": "" },
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_bf37a268b073433a8772367162d1b16a"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1709669107070.5,
+			"isPrivate": false,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingFollowRedirects": "global",
+			"_type": "request"
+		},
+		{
+			"_id": "req_710867d16c824176a24dd42e793f8661",
+			"parentId": "fld_1cf53fb5644f475f8c492e49d098973e",
+			"modified": 1728485944236,
+			"created": 1720724873742,
+			"url": "http://localhost:3001/docs/1/4",
+			"name": "Update user.",
+			"description": "",
+			"method": "PUT",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n  \"name\": \"Documento 5\",\n  \"status\": \"ativo\"\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_df33fd254a0647ce9e38fb53b6714437"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1709669107058,
+			"isPrivate": false,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingFollowRedirects": "global",
+			"_type": "request"
+		},
+		{
+			"_id": "req_e143f02c630643c19dbc39b2f71f0c44",
+			"parentId": "fld_1cf53fb5644f475f8c492e49d098973e",
+			"modified": 1728485753572,
+			"created": 1709669107033,
+			"url": "http://localhost:3000/docs/1/2",
+			"name": "Find a doc by id.",
+			"description": "",
+			"method": "GET",
+			"body": { "mimeType": "application/json", "text": "" },
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json",
+					"id": "pair_f8b15dbc0d5c412ab0727b0c079368ab"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1709669107033,
+			"isPrivate": false,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingFollowRedirects": "global",
+			"_type": "request"
+		},
+		{
+			"_id": "env_01b0a8247d3e072d27443611de278e7526f44f8e",
+			"parentId": "wrk_102b02fc06144bdda8ee1a0f506f0504",
+			"modified": 1670446903163,
+			"created": 1670446903163,
+			"name": "Base Environment",
+			"data": {},
+			"dataPropertyOrder": null,
+			"color": null,
+			"isPrivate": false,
+			"metaSortKey": 1670446903163,
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_01b0a8247d3e072d27443611de278e7526f44f8e",
+			"parentId": "wrk_102b02fc06144bdda8ee1a0f506f0504",
+			"modified": 1724609721562,
+			"created": 1670446903164,
+			"name": "Default Jar",
+			"cookies": [
+				{
+					"key": "token",
+					"domain": "localhost",
+					"path": "/",
+					"hostOnly": true,
+					"creation": "2024-08-23T14:02:02.691Z",
+					"lastAccessed": "2024-08-25T18:15:21.562Z",
+					"id": "31748833066539417"
+				}
+			],
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "spc_2053a7e7ab48455bb1775f4b2047446f",
+			"parentId": "wrk_102b02fc06144bdda8ee1a0f506f0504",
+			"modified": 1728485955943,
+			"created": 1670446903160,
+			"fileName": "Municca",
+			"contents": "",
+			"contentType": "yaml",
+			"_type": "api_spec"
+		},
+		{
+			"_id": "uts_9d2db131d1064e9aafd4ecd88708fda9",
+			"parentId": "wrk_102b02fc06144bdda8ee1a0f506f0504",
+			"modified": 1670446903167,
+			"created": 1670446903167,
+			"name": "Example Test Suite",
+			"_type": "unit_test_suite"
+		}
+	]
+}
